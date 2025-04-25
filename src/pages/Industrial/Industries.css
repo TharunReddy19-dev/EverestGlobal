@@ -1,0 +1,133 @@
+/* body { */
+/*     margin: 0; */
+/*     font-family: 'Segoe UI', sans-serif; */
+/*     display: flex; */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     min-height: 100vh; */
+/*    */
+/*   } */
+
+
+.leadership_banner-ind {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 90vh;
+    background: url('../../assets/images/about-page-banner-12-2022.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 84px;
+    background-attachment: fixed;
+    padding: 110px 0 0;
+    height: 500px;
+    color: #fff;
+}
+
+.leadership_banner-ind .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.leadership_banner-ind .h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.leadership_banner-ind .text {
+    font-size: 18px;
+    line-height: 1.7;
+   
+  /*   max-width: 800px; */
+}
+/* ---------------------------------------------- */
+.hero-section-ind {
+    position: relative;
+    background-size: cover;
+    background-size: contain;   
+    background-size: 150%;   
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+   /*  background: url('https://s40886.pcdn.co/wp-content/themes/supernova/img/data-services-image-1.jpg') no-repeat center center/cover; */
+  background-image: url('../../assets/images/industtrie2bg2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', sans-serif;;
+    
+  }
+
+  .content-box-ind {
+   /*  */
+   /*  background-color: #dec6c6; */
+    margin-top: 100px;
+
+    margin-right: 400px;
+    padding: 40px 50px;
+    border-radius: 30px;
+  
+  }
+
+  .content-box-ind h1 {
+    font-size: 38px;
+    color: #350367;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .content-box-ind h1 span {
+    color: #0052FF;
+  }
+
+  .content-box-ind p {
+    font-size: 18px;
+    color: #090000;
+    width: 70%;
+    line-height: 1.6;
+  }
+
+  
+  @media (max-width: 768px) {
+    .leadership_banner-ind {
+        flex-direction: column;
+        background-position: center top !important;
+        background-attachment: initial !important;
+        padding: 30px 20px !important;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .leadership_banner-ind .h1 {
+        font-size: 32px;
+    }
+
+    .leadership_banner-ind .text p {
+        font-size: 16px;
+    }
+
+    .hero-section-ind {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .content-box-ind {
+        padding: 30px 25px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-box-ind h1 {
+        font-size: 28px;
+    }
+
+    .content-box-ind p {
+        font-size: 16px;
+    }
+}
