@@ -2,7 +2,7 @@ import React from "react";
 /* import TopContactBar from "./components/Tocontractbar/ToContractBar"; */
 /* import MainNavbar from "./components/MainNavbar"; */
 
-import Home from "./pages/home/home";
+import Home from "./pages/home/Home";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import Industries from "./pages/Industrial/Industries";
