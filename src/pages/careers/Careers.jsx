@@ -72,3 +72,5 @@ const Careers = () => {
 }
 
 export default Careers
+
+//everything not upto
