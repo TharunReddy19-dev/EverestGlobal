@@ -47,7 +47,7 @@ const Services = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);

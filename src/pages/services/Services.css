@@ -1,179 +1,181 @@
+/* Base Styles */
 .service-container {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background: url('../../assets/images/ServiceBG1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: right 84px;
-    background-attachment: fixed;
-    padding: 110px 0 0;
-    text-align: left;
-  }
-  
-  @media (max-width: 767px) {
-    .service-container {
-      background-position: center top !important;
-      background-attachment: initial !important;
-      padding: 30px 20px !important;
-      height: auto;
-      margin-bottom: 15px;
-    }
-  
-    .service-container .text {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .service-container .h2 {
-      font-size: 32px;
-    }
-  }
-  
-  .service-container .containers1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .service-container .h2 {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .service-container .texts p {
-    font-size: 18px;
-    line-height: 1.7;
-    width: 40%;
-    color: white;
-  }
-  
-  /* ---------------------------------- */
-  /* Testimonial Slider Responsive CSS */
-  /* ---------------------------------- */
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80vh;
+  background: url('../../assets/images/ServiceBG1.jpg') no-repeat center right;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 110px 90px 0;
+  text-align: left;
+}
+
+.service-container .containers1 {
+  max-width: 1200px;
+
+}
+
+.service-container .h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.service-container .texts p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+  background-color: #0d1b39;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-panel {
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+.right-panel {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.right-panel img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Typography */
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0c4ff;
+}
+
+.titles h2,
+.titles {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fcf9f9;
+}
+
+.messages {
+  font-style: italic;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.author {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.read-more-btn {
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #ffffff;
+  color: #0d1b39;
+}
+
+.dots {
+  margin-top: 25px;
+}
+
+.dot {
+  height: 8px;
+  width: 30px;
+  margin: 0 4px;
+  background-color: #4a5b7d;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
   .testimonial-slider {
-    display: flex;
-    background-color: #0d1b39;
-    color: white;
-    padding: 40px;
-    font-family: "Segoe UI", sans-serif;
-    overflow: hidden;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
-  
-  .left-panel .titles {
-    flex: 1 1 100%;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    color: white;
+
+  .left-panel {
+    flex: 1;
+    padding-right: 40px;
   }
-  
+
   .right-panel {
-    flex: 1 1 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    height: auto;
+    flex: 1;
+    margin-top: 0;
   }
-  
-  .right-panel img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    max-width: 500px;
+}
+
+@media (max-width: 767px) {
+  .service-container {
+    background-position: center top !important;
+    background-attachment: initial !important;
+    padding: 40px 20px;
+    text-align: center;
   }
-  
-  @media (min-width: 768px) {
-    .left-panel {
-      flex: 1;
-    }
-  
-    .right-panel {
-      flex: 1;
-      margin-top: 0;
-    }
-  }
-  
-  .label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #b0c4ff;
-    margin-bottom: 10px;
-  }
-  
-  .titles h2 {
+
+  .service-container .h2 {
     font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    color: #fcf9f9;
   }
-  
-  .messages {
-    font-style: italic;
+
+  .service-container .texts p {
     font-size: 16px;
-    color:#fcf9f9;
-    margin-bottom: 20px;
-    margin-left: 45px;
+    width: 100%;
   }
-  
+
+  .titles {
+    font-size: 24px;
+  }
+
+  .messages {
+    font-size: 14px;
+  }
+
   .author {
-    margin-bottom: 30px;
-    font-size: 15px;
-    color: white;
-    margin-left: 45px;
-    
+    font-size: 13px;
   }
-  
+
   .read-more-btn {
-    background: transparent;
-    border: 2px solid #ffffff;
-    padding: 10px 16px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-left: 45px;
-    /* transition: background 0.3s ease; */
+    padding: 8px 14px;
+    font-size: 14px;
   }
-  
-  .read-more-btn:hover {
-    background: #ffffff;
-    color: #0d1b39;
+
+  .right-panel {
+    margin-top: 20px;
   }
-  
-  .arrow {
-    margin-left: 8px;
- 
-  }
-  
-  .dots {
-    margin-top: 25px;
-    margin-left: 45px;
-  }
-  
-  .dot {
-    height: 8px;
-    width: 30px;
-    margin: 0 4px;
-    display: inline-block;
-    background-color: #4a5b7d;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .dot.active {
-    background-color: #ffffff;
-  }
-  
+}

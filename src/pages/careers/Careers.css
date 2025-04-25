@@ -11,7 +11,7 @@ background-size: cover;
 background-position: right 84px;
 background-attachment: fixed;
 padding: 110px 0 0;
-height: 200px;
+height: 250px;
 color: #fff;
 }
 .careers-heading{ 
@@ -116,7 +116,7 @@ text-align: center;
 @media (max-width: 1024px) {
  .article-card {
    flex: 1 1 45%;
-   max-width: 47%;
+  
  }
 }
 
