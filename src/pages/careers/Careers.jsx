@@ -2,8 +2,8 @@ import React from 'react'
 import '../careers/Careers.css'
 import MainNavbar from '../../components/MainNavbar'
 import careers from '../../assets/images/careers.jpg'
-/* import careers2 from '../../assets/images/careers2.jpg' */
-import careersImage from '../../assets/images/careers2.jpg'
+import careersImages from '../../assets/images/careerslatest.jpg'
+
 import careers3 from '../../assets/images/Architects.jpg'
 import { useNavigate } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const Careers = () => {
   },
   {
     id: 2,
-    image: careersImage,
+    image: careersImages,
     category: "COMPUTER AND INFORMATION SYSTEM MANAGERS",
     title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR Gupta@everestglobalsolutionsinc.com.",
      path:"/careers/comp&Info-System-Mang"
