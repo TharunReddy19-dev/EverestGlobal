@@ -34,13 +34,13 @@ const MainNavbar = () => {
         <div className="icon-group">
           <FaPhoneAlt />
           <span>+ (305) 563 - 3277</span>
-        </div>
-        <div className="icon-group">
+        {/* </div> */}
+        {/* <div className="icon-group"> */}
           <a href="https://www.instagram.com/everestsolutions/" target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
-        </div>
-        <div className="icon-group">
+      {/*   </div> */}
+        {/* <div className="icon-group"> */}
           <a
             href="https://www.linkedin.com/company/everest-global-solutions/"
             target="_blank"
@@ -56,6 +56,8 @@ const MainNavbar = () => {
           <div className="nav-logo">
             <img src={Logo} alt="EverestGlobal" />
           </div>
+
+          <div className="menu-and-links">
 
           <div className="menu-toggle" onClick={toggleMenu}>
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -86,6 +88,7 @@ const MainNavbar = () => {
             </span>
           </nav>
         </div>
+      </div>
 
         {showSearch && (
           <div className="search-container">
