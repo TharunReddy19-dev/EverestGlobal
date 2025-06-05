@@ -16,7 +16,7 @@ const Industries = () => {
         {/* <div class="h6">MEET APEXON</div> */}
         <h1 className="h1">Industries</h1>
         <div className="text">
-         <p>   EVEREST Global Solutions is a global service company offering gamut of Recruitment, Outsourcing and Software services. Headquartered in Florida, USA we endow with solutions various businesses around the world that includes keys industries like Health Care, Insurance, Pharma, Finance, Telecom and Technology.</p>
+         <p>   EVEREST Global Solutions Inc is a global service company offering gamut of Recruitment, Outsourcing and Software services. Headquartered in Florida, USA we endow with solutions various businesses around the world that includes keys industries like Health Care, Insurance, Pharma, Finance, Telecom and Technology.</p>
          <p>We represent Efficient Work, Talent and skills. Our aim is to offer high class services to our clients by connecting them with professionals around the world talking benefit from vast knowledge over technology spectrum.</p>
         <p>
         Our range of solutions is applicable to various industries. Along with this we also offer customized solutions as per industry requirement. For example, Technology Recruitment that covers the area of finding well qualified professionals with expertise and valuable experience in the niche.

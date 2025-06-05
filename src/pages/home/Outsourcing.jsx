@@ -25,7 +25,7 @@ const sections = [
     content: (
       <div>
         <p>
-        Outsourcing carries different niche, and we at EVEREST Global Solutions believing in staying ahead by researching current market trends. This helps us to give accurate solutions and results accordingly for a long period.
+        Outsourcing carries different niche, and we at EVEREST Global Solutions Inc believing in staying ahead by researching current market trends. This helps us to give accurate solutions and results accordingly for a long period.
         </p>
       </div>
     ),
@@ -56,7 +56,7 @@ return (
   {/*   OUTSOURCING */}
   {/*     </h1> */}
       <p>
-      EVEREST Global Solutions full Outsourcing solutions is fabricated with a strategy that target easy to go business operations, no matter where your office is located. Our workforce strategies is build with time and consist of essential structure that will turn your business to a big business in a inexpensive way. Qualonix Global Technologies serves clients globally with wide range of solutions that includes professional’s services for hiring, HR, Training, Development and a reliable workforce policy.
+      EVEREST Global Solutions Inc full Outsourcing solutions is fabricated with a strategy that target easy to go business operations, no matter where your office is located. Our workforce strategies is build with time and consist of essential structure that will turn your business to a big business in a inexpensive way. Qualonix Global Technologies serves clients globally with wide range of solutions that includes professional’s services for hiring, HR, Training, Development and a reliable workforce policy.
 Your business can be doing more, but needs a valuable workforce and a strategy which can turns a tough decision to a quick decision for moving ahead. With the help of cutting edge technology we offer you a platform to find solutions for your business challenges and deliver higher returns independent to geo-location.
 For your business need, we bring you a team of highly skilled professionals who will assist you in appointing the right size of work force and manage them from one place. Our pre-strategies are ready to use platform for implementing expansion globally.
       </p>

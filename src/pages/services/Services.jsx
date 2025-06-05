@@ -8,20 +8,20 @@ const testimonials = [
   {
     title: "SOFTWARE DEVELOPMENT",
     message:
-      "EVEREST Global Solutions aspire to bid high value, ground-breaking software development solutions within official time period since varying technology aperture implies space to immense opportunities capable of shifting your business paradigm to next level.",
-    why: "So why EVEREST Global Solutions?",
+      "EVEREST Global Solutions Inc aspire to bid high value, ground-breaking software development solutions within official time period since varying technology aperture implies space to immense opportunities capable of shifting your business paradigm to next level.",
+    why: "So why EVEREST Global Solutions Inc?",
   },
   {
     title: "TECHNOLOGY RECRUITING",
     message:
-      "EVEREST Global Solutions recruiting solutions is persistent in contributing progressive functions by execution of hiring project as and when required for Tech Driven functions. Starting with customized methods to locate the precise candidate profile holding progressive abilities to screening, interview schedule and concluding appointments, we offer all essential services for modern business.",
-    why: "What makes EVEREST Global Solutions better?",
+      "EVEREST Global Solutions Inc recruiting solutions is persistent in contributing progressive functions by execution of hiring project as and when required for Tech Driven functions. Starting with customized methods to locate the precise candidate profile holding progressive abilities to screening, interview schedule and concluding appointments, we offer all essential services for modern business.",
+    why: "What makes EVEREST Global Solutions Inc better?",
   },
   {
     title: "OUTSOURCING",
     message:
-      "EVEREST Global Solutions full Outsourcing solutions is fabricated with a strategy that target easy to go business operations, no matter where your office is located. Our workforce strategies is build with time and consist of essential structure that will turn your business to a big business in a inexpensive way. Qualonix Global Technologies serves clients globally with wide range of solutions that includes professional’s services for hiring, HR, Training, Development and a reliable workforce policy.",
-    why: "So why EVEREST Global Solutions?",
+      "EVEREST Global Solutions Inc full Outsourcing solutions is fabricated with a strategy that target easy to go business operations, no matter where your office is located. Our workforce strategies is build with time and consist of essential structure that will turn your business to a big business in a inexpensive way. Qualonix Global Technologies serves clients globally with wide range of solutions that includes professional’s services for hiring, HR, Training, Development and a reliable workforce policy.",
+    why: "So why EVEREST Global Solutions Inc?",
   },
 ];
 
@@ -61,7 +61,7 @@ const Services = () => {
             <h1 className="h2">Services</h1>
             <div className="texts">
               <p>
-                EVEREST Global Solutions is a global platform to deliver esteemed services under Technology Recruiting, Software Development, and Outsourcing platforms. Our motto is to connect you with the right qualified professionals with companies for optimum career opportunities, as well as assist firms in acquiring competent workforce assets.
+                EVEREST Global Solutions Inc is a global platform to deliver esteemed services under Technology Recruiting, Software Development, and Outsourcing platforms. Our motto is to connect you with the right qualified professionals with companies for optimum career opportunities, as well as assist firms in acquiring competent workforce assets.
               </p>
             </div>
           </div>

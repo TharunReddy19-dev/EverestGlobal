@@ -17,7 +17,7 @@ const SoftwareDevelopment = () => {
       content: (
         <div>
           <p>
-          EVEREST Global Solutions develops high value software for various firms and our vast experience has helped to deliver quality sustainable solutions. Our experts ensure the solution have to fit as per the necessity and can be created swiftly, assembled from a bug-free coding.
+          EVEREST Global Solutions Inc develops high value software for various firms and our vast experience has helped to deliver quality sustainable solutions. Our experts ensure the solution have to fit as per the necessity and can be created swiftly, assembled from a bug-free coding.
           </p>
         </div>
       ),
@@ -57,11 +57,11 @@ const SoftwareDevelopment = () => {
     <div className="careers-container">
       <div className="careers-left">
         <p>
-        EVEREST Global Solutions aspire to bid high value, ground-breaking software development solutions within official time period since varying technology aperture implies space to immense opportunities capable of shifting your business paradigm to next level.
+        EVEREST Global Solutions Inc aspire to bid high value, ground-breaking software development solutions within official time period since varying technology aperture implies space to immense opportunities capable of shifting your business paradigm to next level.
   You can trust us to empower your business with custom software solution premeditated and developed for utmost integral precision. Our assortment of software solutions consist of custom applications for capitalizing business productivity, building a bridge for your customers, so that they can connect or contact effortlessly, and finding answers for challenges of operations.
    In this competitive era, many firms climb great heights with the help of technology. No matter if you are a small, mid or a big firm, technology is for everyone. The growing number of platforms has connected a web of virtual platform where your business can prosper if you have the best tools.
         </p>
-        <h2>So why EVEREST Global Solutions?</h2>
+        <h2>So why EVEREST Global Solutions Inc?</h2>
 
         <div className="accordion-section">
           {sections.map(({ title, content }) => (

@@ -29,25 +29,25 @@ const MainNavbar = () => {
       <div className="top-contact-bar">
         <div className="icon-group">
           <FaEnvelope />
-          <span>info@everestglobalsolutions.com</span>
+          <span>info@everestglobalsolutionsinc.com</span>
         </div>
         <div className="icon-group">
           <FaPhoneAlt />
-          <span>+ (305) 563 - 3277</span>
+          <span>+ (305)563-3277</span>
         {/* </div> */}
         {/* <div className="icon-group"> */}
-          <a href="https://www.instagram.com/everestsolutions/" target="_blank" rel="noreferrer">
+        {/*   <a href="https://www.instagram.com/everestsolutions/" target="_blank" rel="noreferrer">
             <FaInstagram />
-          </a>
+          </a> */}
       {/*   </div> */}
         {/* <div className="icon-group"> */}
-          <a
+         {/*  <a
             href="https://www.linkedin.com/company/everest-global-solutions/"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedinIn />
-          </a>
+          </a> */}
         </div>
       </div>
 

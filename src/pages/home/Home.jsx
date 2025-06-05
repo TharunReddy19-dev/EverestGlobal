@@ -22,7 +22,7 @@ const Home = () => {
       </video>
       <div className="hero-overlay" />
       <div className="hero-content">
-        <h1>EVEREST GLOBAL SOLUTIONS <br/></h1>
+        <h1>EVEREST GLOBAL SOLUTIONS INC <br/></h1>
         {/* <button className="hero-btn">Explore Trends</button> */}
         <h3>Technology Recruiting, Software Development and Outsourcing</h3>
       </div>
@@ -66,7 +66,7 @@ const Home = () => {
       <h1 className="heading">Technology Recruiting
        </h1>
        <p className="description">
-      EVEREST Global Solutions recruiting solutions is persistent in contributing progressive functions by execution of hiring project as and when required for Tech Driven functions.
+      EVEREST Global Solutions Inc recruiting solutions is persistent in contributing progressive functions by execution of hiring project as and when required for Tech Driven functions.
         </p>
         <div className="button">
        <button className="botton1" onClick={() => navigate('/homes/technologyRecruiting')}>

@@ -14,7 +14,7 @@ const Careers = () => {
     id: 1,
     image: careers,
     category: "SOFTWARE DEVELOPERS",
-    title: "SOFTWARE DEVELOPERS, APPLICATIONS Miami, FL area. Plan & design architecture of web apps & portals. Write, code, implement, test & debug modules & programs. Travel/reloc to various unanticipated locations. Send res to: Everest Global Solutions, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166.",
+    title: "SOFTWARE DEVELOPERS, APPLICATIONS Miami, FL area. Plan & design architecture of web apps & portals. Write, code, implement, test & debug modules & programs. Travel/reloc to various unanticipated locations. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166.",
     path:"/careers/software-developer"
  
    
@@ -23,7 +23,7 @@ const Careers = () => {
     id: 2,
     image: careersImages,
     category: "COMPUTER AND INFORMATION SYSTEM MANAGERS",
-    title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR Gupta@everestglobalsolutionsinc.com.",
+    title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR Gupta@everestglobalsolutionsinc.com.",
      path:"/careers/comp&Info-System-Mang"
  
   },
@@ -31,7 +31,7 @@ const Careers = () => {
     id: 3,
     image: careers3,
     category: "COMPUTER SYSTEMS ENGINEERS/ARCHITECTS",
-    title: "Miami, FL area. Lead team of Salesforce developers providing technical guidance, mentoring & code reviews. Design and architect Salesforce solutions. Travel / relocate to various unanticipated U.S. locs as reqd. Salary: $138,486 per year. Send res to: Everest Global Solutions, Inc., gupta@everestglobalsolutionsinc.com.",
+    title: "Miami, FL area. Lead team of Salesforce developers providing technical guidance, mentoring & code reviews. Design and architect Salesforce solutions. Travel / relocate to various unanticipated U.S. locs as reqd. Salary: $138,486 per year. Send res to: Everest Global Solutions Inc, Inc., gupta@everestglobalsolutionsinc.com.",
     path:"/careers/computerSys-eng-aecti"
    
   },
