@@ -1,9 +1,10 @@
-import React from "react";
+
+import React,{ useEffect } from "react";
 import "../home/home.css";
 import image1 from '../../assets/images/image1.jpg'
 import Recruting from '../../assets/images/Recruting.jpg'
 import MainNavbar from "../../components/MainNavbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import outsourcing from '../../assets/images/outsourcing.jpg'
 /* import { useNavigate } from "react-router-dom"; */
 
@@ -11,6 +12,11 @@ import outsourcing from '../../assets/images/outsourcing.jpg'
 
 const Home = () => {
   const navigate = useNavigate();
+
+   useEffect(() => {
+    document.title = "Everest Global Solutions Inc";
+  }, []);
+  
   return (
     <>
   <MainNavbar/>
