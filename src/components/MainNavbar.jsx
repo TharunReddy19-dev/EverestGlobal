@@ -83,9 +83,9 @@ const MainNavbar = () => {
               <FaEnvelope /> CONTACT US
             </NavLink>
 
-            <span className="search-icon" onClick={toggleSearch}>
+           {/*  <span className="search-icon" onClick={toggleSearch}>
               <FaSearch />
-            </span>
+            </span> */}
           </nav>
         </div>
       </div>
