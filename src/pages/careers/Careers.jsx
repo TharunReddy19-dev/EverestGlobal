@@ -23,7 +23,7 @@ const Careers = () => {
     id: 2,
     image: careersImages,
     category: "COMPUTER AND INFORMATION SYSTEM MANAGERS",
-    title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR Gupta@everestglobalsolutionsinc.com.",
+    title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR gupta@everestglobalsolutionsinc.com.",
      path:"/careers/comp&Info-System-Mang"
  
   },

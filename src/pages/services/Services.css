@@ -19,10 +19,13 @@
 }
 
 .service-container .h2 {
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 2.5rem; 
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .service-container .texts p {

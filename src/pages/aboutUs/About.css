@@ -1,15 +1,15 @@
 .hero-sections-abt {
   position: relative;
   display: flex;
-  font-family: 'Segoe UI', sans-serif;
   flex-direction: column;
-  height: 100%;
+  height: 100vh; /* Full viewport height for hero section */
   background-image: url('../../assets/images/Allimage.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .hero-overlay-abt {
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.56);
   z-index: 1;
 }
 
@@ -26,62 +26,65 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   max-width: 80%;
   padding: 20px;
 }
 
 .about-header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 2.5rem; 
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-content {
-  font-size: 18px;
+  font-size: 1.0625rem;
   line-height: 1.8;
-  color: #fff;
-  max-width: 1100px;
-  margin: 20px auto;
-  padding: 20px;
+  color: #ffffff;
+  max-width: 68.75rem;
+  margin: 1.25rem auto; 
+  padding: 1.25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .passage {
-  padding: 20px;
-  border-radius: 20px;
+  padding: 1.25rem; 
+  border-radius: 1.25rem; 
   color: #fdfafa;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; 
+ /*  background: rgba(0, 0, 0, 0.2);  */
 }
 
 .about-benefits {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
+  max-width: 75rem; 
+  margin: 3.125rem auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 70px;
+  gap: 4.375rem;
+  align-items: flex-start; 
 }
 
 .image-benefits {
   width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  max-width: 550px;
+  max-width: 34.375rem;
   height: auto;
+  border-radius: 1.25rem; 
+  object-fit: cover;
 }
 
 .report-benefits {
   flex: 1;
-  font-family: 'Segoe UI', sans-serif;
-  min-width: 300px;
-  max-width: 550px;
-  margin-bottom: 20px;
-  font-size: 18px;
+  min-width: 18.75rem; 
+  max-width: 34.375rem; 
+  margin-bottom: 1.25rem;
+  font-size: 1.0625rem;
   color: #3e3c3c;
-  line-height: 25px;
+  line-height: 1.5625rem; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-benefits .report-text {
@@ -90,30 +93,38 @@
 
 @media (max-width: 768px) {
   .hero-sections-abt {
+    height: auto;
     background-size: cover;
-    
+    padding: 2rem 0; 
+  }
+
+  .hero-content-abt {
+    max-width: 90%; 
   }
 
   .about-header h1 {
-    font-size: 28px;
+    font-size: 1.75rem; 
   }
 
   .about-content {
-    font-size: 16px;
-    line-height: 22px;
-  }
+    font-size: 1rem; 
+    line-height: 1.375rem; 
 
   .about-benefits {
     flex-direction: column;
     align-items: center;
+    gap: 2rem; 
+    padding: 0 1rem; 
   }
 
   .image-benefits {
     max-width: 100%;
-    height: 300px;
+    height: 18.75rem;
   }
 
   .report-benefits {
     max-width: 100%;
+    min-width: 0; 
   }
+}
 }
