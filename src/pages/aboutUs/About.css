@@ -1,6 +1,7 @@
 .hero-sections-abt {
   position: relative;
   display: flex;
+  font-family: 'Segoe UI', sans-serif;
   flex-direction: column;
   height: 100%;
   background-image: url('../../assets/images/Allimage.jpeg');
@@ -74,6 +75,7 @@
 
 .report-benefits {
   flex: 1;
+  font-family: 'Segoe UI', sans-serif;
   min-width: 300px;
   max-width: 550px;
   margin-bottom: 20px;
@@ -89,6 +91,7 @@
 @media (max-width: 768px) {
   .hero-sections-abt {
     background-size: cover;
+    
   }
 
   .about-header h1 {

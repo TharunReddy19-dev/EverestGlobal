@@ -58,7 +58,7 @@ const AboutUs = () => {
             <h1>Mission Statement</h1>
             <p className="report-benefits">A company is only as good as the promises it keeps</p>
             <p className="report-benefits">
-              EVEREST Global Solutions Inc is committed to being the highest quality supplier of employment solutions to its clients. Our mission is to provide best staffing services for our clients and our technical consultants. We believe in equipping our staff with the skills needed to accommodate the ever changing needs of today’s business. We will provide the best working place for our employees which will encourage personal and professional growth. Our mission is to provide innovative and exclusive Staffing solutions to our valuable clients as well as to place best IT Professionals at most suited positions in best working environments as per their skill sets.
+              EVEREST Global Solutions Inc is committed to being the highest quality supplier of employment solutions to its clients. Our mission is to provide best staffing services for our clients and our technical consultants. We believe in equipping our staff with the skills needed to accommodate the ever changing needs of today’s business. We will provide the best working place for our employees which will encourage personal and professional growth.{/*  Our mission is to provide innovative and exclusive Staffing solutions to our valuable clients as well as to place best IT Professionals at most suited positions in best working environments as per their skill sets. */}
             </p>
           </div>
           <div className="report-benefits">

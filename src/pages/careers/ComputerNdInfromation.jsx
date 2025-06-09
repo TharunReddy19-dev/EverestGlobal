@@ -46,57 +46,57 @@ const ComputerNdInfromation = () => {
             />
           </div>
   
-          <div className="form-groups-careers">
-            <label>
-              Email <span className="required-careers">*</span>
-            </label>
-            <input
-              className="input"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+       <div className="form-groups">
+          <label>
+            Email <span className="required">*</span>
+          </label>
+          <input
+            className="input"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+       <div className="form-groups">
+          <label>
+            Contact Number <span className="required">*</span>
+          </label>
+          <input
+            className="input"
+            type="text"
+            name="contact"
+            value={formData.contact}
+            onChange={handleChange}
+            required
+          />
+        </div>
   
-          <div className="form-groups-careers">
-            <label>
-              Contact Number <span className="required-careers">*</span>
-            </label>
-            <input
-              className="input"
-              type="text"
-              name="contact"
-              value={formData.contact}
-              onChange={handleChange}
-              required
-            />
-          </div>
+       <div className="form-groups">
+          <label>Address</label>
+          <textarea
+            className="input address"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+          ></textarea>
+        </div>
   
-          <div className="form-groups-careers">
-            <label>Address</label>
-            <textarea
-              className="input address"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-            ></textarea>
-          </div>
-  
-          <div className="form-groups-careers">
-            <label>
-              Upload Resume <span className="required-careers">*</span>
-            </label>
-            <input
-              className="input"
-              type="file"
-              name="resume"
-              accept=".pdf,.doc,.docx"
-              onChange={handleChange}
-              required
-            />
-          </div>
+         <div className="form-groups">
+          <label>
+            Upload Resume <span className="required">*</span>
+          </label>
+          <input
+            className="input"
+            type="file"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            onChange={handleChange}
+            required
+          />
+        </div>
+
   
           <button className="submit" type="submit">
             Submit Application

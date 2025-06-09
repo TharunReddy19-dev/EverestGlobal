@@ -86,7 +86,6 @@ text-align: center;
 /*  --------------------------------- */
  flex-grow: 1; /* Allows title to take space */
   margin-bottom: 16px;
- 
  line-height: 1.3;
 }
 .read-more {

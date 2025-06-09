@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState ,useEffect } from 'react';
 import '../contract/Contract.css';
 import MainNavbar from '../../components/MainNavbar';
 import { FaMapMarkerAlt } from 'react-icons/fa';
@@ -6,10 +6,75 @@ import { FiPhone } from 'react-icons/fi';
 import { MdEmail } from 'react-icons/md';
 
 const Contract = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    mobile: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState({});
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = 'Full name is required';
+    }
+    
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Invalid email format';
+    }
+    
+    if (!formData.mobile.trim()) {
+      newErrors.mobile = 'Mobile number is required';
+    } else if (!/^\+?\d{10,15}$/.test(formData.mobile.replace(/\s/g, ''))) {
+      newErrors.mobile = 'Invalid mobile number';
+    }
+    
+   /*  if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+    } */
+    
+    return newErrors;
+  };
+
   const handleSubmit = () => {
-    // You can collect and validate form data here
-    alert('Form submitted!');
-    // Or send the data to a backend/server
+    const validationErrors = validateForm();
+    
+    if (Object.keys(validationErrors).length === 0) {
+      // Form is valid, proceed with submission
+      setShowSuccess(true);
+      setFormData({
+        fullName: '',
+        email: '',
+        mobile: '',
+        message: ''
+      });
+      setErrors({});
+      // You can add API call here to send form data
+    } else {
+      setErrors(validationErrors);
+      setShowSuccess(false);
+    }
+  };
+  useEffect(() => {
+    if (showSuccess) {
+      const timer = setTimeout(() => {
+        setShowSuccess(false);
+      }, 3000); // Hide popup after 3 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccess]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   return (
@@ -17,6 +82,26 @@ const Contract = () => {
       <MainNavbar />
       <div className="collab-containers">
         <div className="form-sections">
+          {showSuccess && (
+    <div 
+              className="success-message" 
+              style={{ 
+                position: 'absolute',
+                top: '100px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                backgroundColor: 'rgba(0, 128, 0, 0.9)',
+                color: 'white',
+                padding: '15px 25px',
+                borderRadius: '8px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                animation: 'fadeInOut 3s ease-in-out',
+                zIndex: 1000
+              }}
+            >
+              We have received your message, we will contact you very soon
+            </div>
+          )}
           <h1>CONTACT US</h1>
           <p>
             It would be great to hear from you! Just drop us a line and ask for anything
@@ -32,9 +117,13 @@ const Contract = () => {
             </label>
             <input
               type="text"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
               placeholder="Enter your full name"
               className="input"
             />
+            {errors.fullName && <span className="error" style={{ color: 'red' }}>{errors.fullName}</span>}
           </div>
 
           <div className="form-groups">
@@ -45,9 +134,13 @@ const Contract = () => {
             </label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Enter your email"
               className="input"
             />
+            {errors.email && <span className="error" style={{ color: 'red' }}>{errors.email}</span>}
           </div>
 
           <div className="form-groups">
@@ -58,18 +151,30 @@ const Contract = () => {
             </label>
             <input
               type="text"
+              name="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
               placeholder="Enter your Mobile number"
               className="input"
             />
+            {errors.mobile && <span className="error" style={{ color: 'red' }}>{errors.mobile}</span>}
           </div>
 
           <div className="form-groups">
             <label>
               <strong>
-                Message <span className="required">*</span>
+                Message <span className="required"></span>
               </strong>
             </label>
-            <input type="text" placeholder="Message" className="input" />
+            <input
+              type="text"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Message"
+              className="input"
+            />
+            {errors.message && <span className="error" style={{ color: 'red' }}>{errors.message}</span>}
           </div>
 
           <div>
