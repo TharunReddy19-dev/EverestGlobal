@@ -14,7 +14,7 @@ const JobApplicationForm = ({ title = "Job Application" }) => {
     address: "",
   });
 
-  const [resumeFile, setResumeFile] = useState(null);
+  /* const [resumeFile, setResumeFile] = useState(null); */
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -33,7 +33,7 @@ const JobApplicationForm = ({ title = "Job Application" }) => {
         alert("File size must be less than 5MB.");
         return;
       }
-      setResumeFile(file);
+      /* setResumeFile(file); */
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -52,7 +52,7 @@ const JobApplicationForm = ({ title = "Job Application" }) => {
       alert("Application submitted successfully!");
       formRef.current.reset();
       setFormData({ name: "", email: "", contact: "", address: "" });
-      setResumeFile(null);
+      /* setResumeFile(null); */
     } catch (error) {
       console.error("EmailJS Error:", error);
       alert("Failed to submit application. Please try again.");
@@ -120,7 +120,7 @@ const JobApplicationForm = ({ title = "Job Application" }) => {
               ></textarea>
             </div>
 
-            <div className="form-group">
+            {/* <div className="form-group">
               <label>
                 Upload Resume <span className="required">*</span>
               </label>
@@ -131,7 +131,7 @@ const JobApplicationForm = ({ title = "Job Application" }) => {
                 onChange={handleChange}
                 required
               />
-            </div>
+            </div> */}
 
             <button className="submit-btn" type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : "Submit Application"}

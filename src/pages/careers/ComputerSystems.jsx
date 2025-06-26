@@ -111,7 +111,7 @@ const ComputerSystems = () => {
   }; */
   return (
     <JobApplicationForm
-      title="APPLY TO COMPUTER SYSTEMS ENGINEERS / ARCHITECTS"
+      title="APPLY TO COMPUTER SYSTEMS ENGINEER / ARCHITECT"
       formGroupClass="form-groups"
       requiredClass="required"
     />

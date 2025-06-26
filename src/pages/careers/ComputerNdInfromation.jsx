@@ -110,7 +110,7 @@ const ComputerNdInfromation = () => {
    */
   return (
     <JobApplicationForm
-      title="APPLY TO COMPUTER AND INFORMATION SYSTEMS MANAGERS"
+      title="APPLY TO INFORMATION SYSTEM ANALYST"
       formGroupClass="form-groups"
       requiredClass="required"
     />

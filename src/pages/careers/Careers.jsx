@@ -13,7 +13,7 @@ const Careers = () => {
     {
       id: 1,
       image: careers,
-      category: "Software Developers",
+      category: "Software Developer",
      
       description: "Lead team of Oracle Fusion Cloud HCM developers. Design & architect Cloud HCM solutions.",
       location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
@@ -24,7 +24,7 @@ const Careers = () => {
     {
       id: 2,
       image: careersImages,
-      category: "INFORMATION SYSTEM ANALYSTS",
+      category: "INFORMATION SYSTEM ANALYST",
       description: "Leverage LeanIX to analyze, consolidate & validate app landscape. Some job duties can be performed from home.",
       location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
       salary: "$104,894 per year",
@@ -34,7 +34,7 @@ const Careers = () => {
     {
       id: 3,
       image: careers3,
-      category: "COMPUTER SYSTEMS ENGINEERS/ARCHITECTS",
+      category: "COMPUTER SYSTEMS ENGINEER/ARCHITECT",
       description: "Lead team of Salesforce developers providing technical guidance, mentoring & code reviews. Design and architect Salesforce solutions.",
       location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
       salary: "$138,486 per year",
