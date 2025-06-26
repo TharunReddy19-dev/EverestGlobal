@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import MainNavbar from "../../components/MainNavbar";
+import JobApplicationForm from "../../components/JobApplicationForm";
+/* import MainNavbar from "../../components/MainNavbar"; */
+
+
 const ComputerSystems = () => {
-  const [formData, setFormData] = useState({
+/*   const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact: "",
@@ -105,7 +108,15 @@ const ComputerSystems = () => {
     </div>
     </>
   );
-  };
+  }; */
+  return (
+    <JobApplicationForm
+      title="APPLY TO COMPUTER SYSTEMS ENGINEERS / ARCHITECTS"
+      formGroupClass="form-groups"
+      requiredClass="required"
+    />
+  );
+};
   
 
-export default ComputerSystems
+export default ComputerSystems;

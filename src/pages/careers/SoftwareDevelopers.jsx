@@ -1,10 +1,11 @@
 
 
 import React, { useState } from "react";
-import MainNavbar from "../../components/MainNavbar";
+import JobApplicationForm from "../../components/JobApplicationForm";
+
 
 const SoftwareDevelopers = () => {
-const [formData, setFormData] = useState({
+/* const [formData, setFormData] = useState({
   name: "",
   email: "",
   contact: "",
@@ -109,5 +110,13 @@ return (
   </>
 );
 };
-
-export default SoftwareDevelopers
+ */
+return (
+    <JobApplicationForm
+      title="APPLY TO SOFTWARE DEVELOPERS"
+      formGroupClass="form-groups"
+      requiredClass="required"
+    />
+  );
+};
+export default SoftwareDevelopers;

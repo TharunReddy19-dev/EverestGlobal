@@ -1,77 +1,79 @@
-import React from 'react'
-import '../careers/Careers.css'
-import MainNavbar from '../../components/MainNavbar'
-import careers from '../../assets/images/careers.jpg'
-import careersImages from '../../assets/images/careerslatest.jpg'
-
-import careers3 from '../../assets/images/Architects.jpg'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import MainNavbar from '../../components/MainNavbar';
+import careers from '../../assets/images/careers.jpg';
+import careersImages from '../../assets/images/careerslatest.jpg';
+import careers3 from '../../assets/images/Architects.jpg';
+import './Careers.css';
 
 const Careers = () => {
-  const navigate=useNavigate();
- const career = [
-  {
-    id: 1,
-    image: careers,
-    category: "SOFTWARE DEVELOPERS",
-    title: "SOFTWARE DEVELOPERS, APPLICATIONS Miami, FL area. Plan & design architecture of web apps & portals. Write, code, implement, test & debug modules & programs. Travel/reloc to various unanticipated locations. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166.",
-    path:"/careers/software-developer"
- 
-   
-  },
-  {
-    id: 2,
-    image: careersImages,
-    category: "COMPUTER AND INFORMATION SYSTEM MANAGERS",
-    title: "Miami, FL area. Participate in all aspects of SDLC. Propose & deliver Managed File Transfer architecture design. Travel / relocate to various unanticipated locations as reqd. Send res to: Everest Global Solutions Inc, Inc., 8200 NW 41st St., Ste. 200, Miami, FL 33166 OR gupta@everestglobalsolutionsinc.com.",
-     path:"/careers/comp&Info-System-Mang"
- 
-  },
-  {
-    id: 3,
-    image: careers3,
-    category: "COMPUTER SYSTEMS ENGINEERS/ARCHITECTS",
-    title: "Miami, FL area. Lead team of Salesforce developers providing technical guidance, mentoring & code reviews. Design and architect Salesforce solutions. Travel / relocate to various unanticipated U.S. locs as reqd. Salary: $138,486 per year. Send res to: Everest Global Solutions Inc, Inc., gupta@everestglobalsolutionsinc.com.",
-    path:"/careers/computerSys-eng-aecti"
-   
-  },
-];
+  const navigate = useNavigate();
+
+  const career = [
+    {
+      id: 1,
+      image: careers,
+      category: "Software Developers",
+     
+      description: "Lead team of Oracle Fusion Cloud HCM developers. Design & architect Cloud HCM solutions.",
+      location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
+      salary: "$149,781 per year",
+      contact: "Send resume to: gupta@everestglobalsolutionsinc.com",
+      path: "/careers/software-developer"
+    },
+    {
+      id: 2,
+      image: careersImages,
+      category: "INFORMATION SYSTEM ANALYSTS",
+      description: "Leverage LeanIX to analyze, consolidate & validate app landscape. Some job duties can be performed from home.",
+      location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
+      salary: "$104,894 per year",
+      contact: "Send resume to: gupta@everestglobalsolutionsinc.com",
+      path: "/careers/comp&Info-System-Mang"
+    },
+    {
+      id: 3,
+      image: careers3,
+      category: "COMPUTER SYSTEMS ENGINEERS/ARCHITECTS",
+      description: "Lead team of Salesforce developers providing technical guidance, mentoring & code reviews. Design and architect Salesforce solutions.",
+      location: "Miami, FL area (Travel/relocate to various unanticipated U.S. locations as required)",
+      salary: "$138,486 per year",
+      contact: "Send resume to: gupta@everestglobalsolutionsinc.com",
+      path: "/careers/computerSys-eng-aecti"
+    },
+  ];
+
   return (
-   <>
-   <MainNavbar/>
-   <section>
-    <div className='Careers'>
-     <div><h1 className='careers-heading'>CAREERS</h1></div>
-     <div className='careers-span'>
-     <span>SOFTWARE DEVELOPERS & </span><br />
-     <span>COMPUTER AND INFORMATION SYSTEM MANAGERS</span>
-     <br/>
-     <span>COMPUTER SYSTEMS ENGINEERS/ARCHITECTS</span>
-     </div>
-     </div>
-   </section>
-   <section className="articles-wrapper">
-      <div className="articles-grid">
-        {career.map((article) => (
-          <div key={article.id} className="article-card">
-            <img
-              src={article.image}
-              alt={article.title}
-              className="article-image"
-            />
-            <div className="article-category">{article.category}</div>
-            <h3 className="article-title">{article.title}</h3>
-
-            <button className='read-more' onClick={() => navigate(article.path)}>Apply Now</button>
-            
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <MainNavbar />
+      <section className="careers-hero">
+        <div className="careers-content">
+          <h1 className="careers-heading">Join Our Team</h1>
+          <p className="careers-subheading">Explore exciting career opportunities in I.T. and Systems Engineering</p>
+        </div>
+      </section>
+      <section className="careers-wrapper">
+        <div className="careers-grid">
+          {career.map((job) => (
+            <div key={job.id} className="job-card">
+              <img src={job.image} alt={job.title} className="job-image" />
+              <div className="job-content">
+                <span className="job-category">{job.category}</span>
+                <h3 className="job-title">{job.title}</h3>
+                <div className="job-details">
+                  <p><strong>Job Description:</strong> {job.description}</p>
+                  <p><strong>Location:</strong> {job.location}</p>
+                  <p><strong>Salary:</strong> {job.salary}</p>
+                  <p><strong>Contact:</strong> {job.contact}</p>
+                </div>
+                <button className="apply-button" onClick={() => navigate(job.path)}>Apply Now</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Careers
-
-//everything not upto
+export default Careers;

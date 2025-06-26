@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import MainNavbar from "../../components/MainNavbar";
+import JobApplicationForm from "../../components/JobApplicationForm";
 
 const ComputerNdInfromation = () => {
-  const [formData, setFormData] = useState({
+ /*  const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact: "",
@@ -107,6 +107,14 @@ const ComputerNdInfromation = () => {
     </>
   );
   };
-  
+   */
+  return (
+    <JobApplicationForm
+      title="APPLY TO COMPUTER AND INFORMATION SYSTEMS MANAGERS"
+      formGroupClass="form-groups"
+      requiredClass="required"
+    />
+  );
+};
 
 export default ComputerNdInfromation
