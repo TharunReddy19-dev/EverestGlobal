@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import MainNavbar from '../../components/MainNavbar';
 import careers from '../../assets/images/careers.jpg';
 import careersImages from '../../assets/images/careerslatest.jpg';
+import SoftwareDeveloperNxt from '../careers/SoftwareDeveloperNxt';
 import careers3 from '../../assets/images/Architects.jpg';
 import './Careers.css';
 
 const Careers = () => {
   const navigate = useNavigate();
+  const [selectedJob, setSelectedJob] = React.useState(null);
 
   const career = [
     {
@@ -66,12 +68,17 @@ const Careers = () => {
                   <p><strong>Salary:</strong> {job.salary}</p>
                   <p><strong>Contact:</strong> {job.contact}</p>
                 </div>
-                <button className="apply-button" onClick={() => navigate(job.path)}>Apply Now</button>
+               {/*  <button className="apply-button" onClick={() => navigate(job.path)}>Apply Now</button> */}
+               <button className="apply-button" onClick={() => setSelectedJob(job)}>Apply Now</button>
+
               </div>
             </div>
           ))}
         </div>
       </section>
+      {selectedJob && (
+        <SoftwareDeveloperNxt job={selectedJob} onFinish={() => setSelectedJob(null)} />
+      )}
     </>
   );
 };
